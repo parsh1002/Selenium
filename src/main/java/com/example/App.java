@@ -8,13 +8,13 @@ public class App
 {
     public static void main( String[] args )
     {
-        ChromeOptions options = new ChromeOptions();
+        // ChromeOptions options = new ChromeOptions();
 
-        options.addArguments("--headless=new");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--diable-dev-shm-usage");
+        // options.addArguments("--headless=new");
+        // options.addArguments("--no-sandbox");
+        // options.addArguments("--diable-dev-shm-usage");
         
-        WebDriver driver = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver();
         driver.get("https://www.practicetestautomation.com/practice-test-login/");
         driver.manage().window().maximize();
         driver.findElement(By.id("username")).sendKeys("student");
