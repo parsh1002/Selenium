@@ -26,7 +26,7 @@ sh 'ls -l target'
 }
 stage('Run Application'){
 steps{
-sh 'java -jar target/Selenium-1.0-SNAPSHOT.jar'
+sh 'mvn exec:java -Dexec.mainClass="com.example.App"'
 }
 }
 }
